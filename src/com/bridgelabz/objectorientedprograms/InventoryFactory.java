@@ -5,8 +5,6 @@ import com.bridgelabz.linkedlist.INode;
 public class InventoryFactory implements INode<Inventory> {
 	Inventory key;
 	InventoryFactory next;
-	
-	
 	public InventoryFactory(Inventory key) {
 		super();
 		this.key = key;
