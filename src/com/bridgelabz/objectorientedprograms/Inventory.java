@@ -12,7 +12,6 @@ public class Inventory {
 		this.weight = weight;
 		this.price = price;
 	}
-	
 	public String getName() {
 		return name;
 	}
