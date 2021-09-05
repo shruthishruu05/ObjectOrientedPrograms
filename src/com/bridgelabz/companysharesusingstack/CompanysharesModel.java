@@ -3,7 +3,8 @@ package com.bridgelabz.companysharesusingstack;
 
 import com.bridgelabz.linkedlist.INode;
 
-public class CompanysharesModel implements INode<Companyshares> {
+public class CompanysharesModel implements INode<Companyshares> 
+{
 	private Companyshares key;
 	private CompanysharesModel next;
 	
