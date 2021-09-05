@@ -17,7 +17,6 @@ public class Companyshares {
 		this.company_share_price = company_share_price;
 		this.company_total_value = company_total_value;
 	}
-
 	@Override
 	public String toString() {
 		return "Companyshares [company_symbol=" + company_symbol + ", company_name=" + company_name
