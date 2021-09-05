@@ -5,7 +5,8 @@ import java.util.Scanner;
 import com.bridgelabz.linkedlist.INode;
 import com.bridgelabz.linkedlist.LinkedList;
 
-public class StockPortfolio {
+public class StockPortfolio 
+{
 	public static void main(String[] args) {
 		LinkedList<Stock> stockList = new LinkedList<Stock>();
 		System.out.println("Enter number of stocks");
