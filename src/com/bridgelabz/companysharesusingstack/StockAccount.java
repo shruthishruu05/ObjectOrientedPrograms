@@ -107,7 +107,8 @@ public class StockAccount {
 			int  custShare = tempNode.getKey().getCustomer_shares();
 			
 			
-			if (share  <= custShare) {
+			if (share  <= custShare) 
+			{
 				tempCompanyNode.getKey().setCompany_share_price(tempCompanyNode.getKey().getCompany_shares()+share);
 				tempCompanyNode.getKey().setCompany_total_value(tempCompanyNode.getKey().getCompany_share_price()*tempCompanyNode.getKey().getCompany_shares());
 				
