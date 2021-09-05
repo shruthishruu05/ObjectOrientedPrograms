@@ -29,7 +29,6 @@ public class CompanysharesModel implements INode<Companyshares> {
 	}
 	@Override
 	public void setNext(INode<Companyshares> next) {
-		this.next = (CompanysharesModel) next;
-		
+		this.next = (CompanysharesModel) next;	
 	}
 }
