@@ -10,7 +10,8 @@ import com.bridgelabz.linkedlist.MyStack;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;  
 
-public class StockAccount {
+public class StockAccount 
+{
 	LinkedList<CompanyShare> myShareList;
 	MyStack<String> purchasedStack = new MyStack<String>();
 	MyStack<String> soldStack = new MyStack<String>();
