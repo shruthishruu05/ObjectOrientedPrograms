@@ -6,9 +6,11 @@ import java.util.Scanner;
 import com.bridgelabz.linkedlist.INode;
 import com.bridgelabz.linkedlist.LinkedList;
 
-public class StockAccountMain {
+public class StockAccountMain 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		boolean isExit = false;
 		int choice;
 		int indexOfCustomer = 0;
