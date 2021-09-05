@@ -1,6 +1,7 @@
 package com.bridgelabz.companyshares;
 import com.bridgelabz.linkedlist.INode;
-public class TransactionModel implements INode<Transactions> {
+public class TransactionModel implements INode<Transactions> 
+{
 	private Transactions key;
 	private TransactionModel next;
 	
