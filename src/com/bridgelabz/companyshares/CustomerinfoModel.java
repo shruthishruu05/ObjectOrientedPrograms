@@ -7,7 +7,8 @@ public class CustomerinfoModel implements INode<Customerinfo> {
 	private CustomerinfoModel next;
 	
 	
-	public CustomerinfoModel(Customerinfo key) {
+	public CustomerinfoModel(Customerinfo key) 
+	{
 		super();
 		this.key = key;
 		this.next = null;
