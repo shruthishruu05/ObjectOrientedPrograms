@@ -9,7 +9,8 @@ public class Companyshares {
 	private int company_total_value;
 
 	public Companyshares(String companySymbol, String company_name, int company_shares, int company_share_price,
-			int company_total_value) {
+			int company_total_value) 
+	{
 		super();
 		this.company_symbol = companySymbol;
 		this.company_name = company_name;
