@@ -5,7 +5,8 @@ public class TransactionModel implements INode<Transactions>
 	private Transactions key;
 	private TransactionModel next;
 	
-	public TransactionModel(Transactions key) {
+	public TransactionModel(Transactions key) 
+	{
 		super();
 		this.key = key;
 		this.next = null;
