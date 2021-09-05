@@ -1,7 +1,7 @@
 package com.bridgelabz.companyshares;
 
-public class Customerinfo {
-
+public class Customerinfo 
+{
 	private String customer_symbol;
 	private String customer_name;
 	private int customer_shares;
