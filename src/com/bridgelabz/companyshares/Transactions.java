@@ -1,6 +1,7 @@
 package com.bridgelabz.companyshares;
 
-public class Transactions {
+public class Transactions 
+{
 	private String transaction_id;
 	private String buyer;
 	private String seller;
