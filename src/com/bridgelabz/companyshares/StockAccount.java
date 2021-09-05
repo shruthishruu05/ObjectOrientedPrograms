@@ -171,7 +171,8 @@ public class StockAccount {
 				System.out.println(temptransNode.getKey().getDatetime()+"\t");
 				if(temptransNode.getNext()!=null)
 					temptransNode = temptransNode.getNext();
-				else {
+				else 
+				{
 					break;
 				}
 			}
