@@ -8,7 +8,8 @@ public class Transactions
 	private int transaction_amount;
 	private String datetime;
 	
-	public Transactions() {
+	public Transactions()
+	{
 		
 	}
 	public Transactions(String transaction_id, String buyer, String seller, int transaction_amount, String datetime) {
