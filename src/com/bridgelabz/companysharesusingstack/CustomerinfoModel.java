@@ -2,7 +2,8 @@ package com.bridgelabz.companysharesusingstack;
 
 import com.bridgelabz.linkedlist.INode;
 
-public class CustomerinfoModel implements INode<Customerinfo> {
+public class CustomerinfoModel implements INode<Customerinfo> 
+{
 	private Customerinfo key;
 	private CustomerinfoModel next;
 	
