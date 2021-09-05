@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.bridgelabz.linkedlist.INode;
 import com.bridgelabz.linkedlist.LinkedList;
+import com.bridgelabz.linkedlist.MyQueue;
 import com.bridgelabz.linkedlist.MyStack;
 
 import java.time.LocalDateTime;
@@ -14,6 +15,7 @@ public class StockAccount {
 	DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 	DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("HHmmss");
 	public static MyStack<String> stockSymbolStack = new MyStack<String>();
+	public static MyQueue<String> dateTimeQueue = new MyQueue<String>();
 	public void buy(LinkedList<Companyshares> listOfCompanies,INode<Customerinfo> tempNode
 			,LinkedList<Transactions> transList) {
 		System.out.println("****************buy***************");
@@ -61,6 +63,7 @@ public class StockAccount {
 					TransactionModel transactionModel = new TransactionModel(trans);
 					transList.append(transactionModel);
 					stockSymbolStack.push(tempCompanyNode.getKey().getCompany_symbol());
+					dateTimeQueue.enqueue(dateTimeFormatter.format(now));
 					System.out.println("Shares bought successfully");
 					
 				}
@@ -123,12 +126,10 @@ public class StockAccount {
 				trans.setSeller(tempNode.getKey().getCustomer_name());
 				trans.setTransaction_amount(share * tempCompanyNode.getKey().getCompany_share_price());
 				trans.setDatetime(dateTimeFormatter.format(now));
-				
+				dateTimeQueue.enqueue(dateTimeFormatter.format(now));
 				TransactionModel transactionModel = new TransactionModel(trans);
 				transList.append(transactionModel);
-				System.out.println("Shares sold successfully");
-				
-				
+				System.out.println("Shares sold successfully");	
 		}
 			else {
 			System.out.println("You dont have that much shares to sell");
@@ -189,6 +190,9 @@ public class StockAccount {
 	}
 	public void showStack() {
 		stockSymbolStack.display();
+	}
+	public void showQueue() {
+		dateTimeQueue.display();
 	}
 	
 }
