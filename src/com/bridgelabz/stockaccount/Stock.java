@@ -1,6 +1,7 @@
 package com.bridgelabz.stockaccount;
 
-public class Stock {
+public class Stock 
+{
 	private String name;
 	private long numberOfShares;
 	private double price;
