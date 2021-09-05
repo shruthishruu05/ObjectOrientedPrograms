@@ -84,7 +84,7 @@ public class StockAccountMain
 			while(!isExit) {
 				System.out.println("Welcome "+customerName);
 				System.out.println("Please select options\n" + "1. buy shares\n" + "2. sell shares\n"
-						+ "3. print report\n" + "4. Display stack\n"+"5. Exit");
+						+ "3. print report\n" + "4. Display stack\n"+"5. Display Queue"+"6. Exit");
 				choice = scanner.nextInt();
 				switch (choice) {
 				case 1:
@@ -100,6 +100,8 @@ public class StockAccountMain
 					stockAccount.showStack();
 					break;
 				case 5:
+					stockAccount.showQueue();
+				case 6:
 					isExit = true;
 					System.out.println("Thank you for using service");
 					break;
