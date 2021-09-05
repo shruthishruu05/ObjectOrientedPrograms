@@ -2,7 +2,8 @@ package com.bridgelabz.commercialdataprocessing;
 
 import java.time.LocalDateTime; 
 
-public class CompanyShare {
+public class CompanyShare 
+{
 	private String stockSymbol;
 	private int numberOfShare;
 	private double pricePerShare;
