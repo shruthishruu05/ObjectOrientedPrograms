@@ -75,7 +75,6 @@ public class StockAccountMain
 				flag =true;
 				break;
 			}
-				
 			else
 				flag = false;
 			tempNode = tempNode.getNext();
