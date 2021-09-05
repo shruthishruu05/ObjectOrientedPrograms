@@ -134,7 +134,8 @@ public class StockAccount {
 			System.out.println("You dont have that much shares to sell");
 		}
 		}
-		else {
+		else 
+		{
 			System.out.println("The company not found");
 		}
 		
