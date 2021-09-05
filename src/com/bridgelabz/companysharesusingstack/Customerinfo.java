@@ -30,7 +30,8 @@ public class Customerinfo
 		this.customer_balance = customer_balance;
 	}
 
-	public String getCustomer_symbol() {
+	public String getCustomer_symbol() 
+	{
 		return customer_symbol;
 	}
 
